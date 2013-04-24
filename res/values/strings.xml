@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CPrograms</string>
+    <string name="menu_settings">Settings</string>
+    <string name="prog1"> 1. Linear Search</string>
+    <string name="prog2"> 2. Binary Search</string>
+    <string name="prog3"> 3. Interpolation Search</string>
+    <string name="prog4"> 4. Number Pallindrome</string>
+    <string name="prog5"> 5. Fibonnaci Series</string>
+    <string name="prog6"> 6. Binary to Decimal</string>
+    <string name="prog7"> 7. Factorial of a Number</string>
+    <string name="prog8"> 8. Graphics Shape</string>
+    <string name="prog9"> 9. Bubble Sort</string>
+    <string name="prog10"> 10. Insertion Sort</string>
+    <string name="prog11"> 11. Selection Sort</string>
+    <string name="prog12"> 12. Merge Sort</string>
+    <string name="prog13"> 13. Quick Sort</string>
+    <string name="prog14"> 14. Heap Sort</string>
+    <string name="prog15"> 15. Radix Sort</string>
+       
+
+</resources>

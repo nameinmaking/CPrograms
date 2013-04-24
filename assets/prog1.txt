@@ -1,0 +1,38 @@
+//PROGRAM TO IMPLEMENT SEQUENTIAL SEARCHING
+//CODED AND COMPILED USING TURBO C
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+char opt;
+int arr[20],n,i,item;
+clrscr();
+printf (“\nHow many elements you want to enter in the array : ”);
+scanf (“%d”,&n);
+for(i=0; i < n;i++)
+{
+printf (“\nEnter element %d : ”,i+1);
+scanf (“%d”, &arr[i]);
+}
+printf (“\n\nPress any key to continue....”);
+getch();
+do
+{
+clrscr();
+printf (“\nEnter the element to be searched : ”);
+scanf (“%d”,&item); //Input the item to be searched
+for(i=0;i < n;i++)
+{
+if item == arr[i])
+{
+printf (“\n%d found at position %d\n”,item,i+1);
+break;
+}
+}/*End of for*/
+if (i == n)
+printf (“\nItem %d not found in array\n”,item);
+printf (“\n\nPress (Y/y) to continue : ”);
+fflush(stdin);
+scanf (“%c”,&opt);
+}while(opt == ‘Y’ || opt == ‘y’);
+}

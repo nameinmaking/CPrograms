@@ -1,0 +1,84 @@
+#include < graphics.h >
+#include < stdlib.h >
+#include < stdio.h >
+#include < conio.h >
+
+void main()
+{
+	/* initialization of graphics */
+	InitGraphics();
+	
+	outtextxy(200, 10, "* Draw Shapes using Graphics *");
+	
+	/* draw circle */
+	// DrawShape(1);
+	
+	/* draw arc */
+	DrawShape(2);
+	
+	/* draw rectangle */
+	DrawShape(3);
+	
+	/* draw pie slice */
+	DrawShape(4);
+	
+	outtextxy(200, 400, "* Press any key to exit *");
+	
+	/* clean up */
+	getch();
+	closegraph();
+	}
+	
+	/* This function initialize graphics */
+	InitGraphics()
+	{
+	/* request auto detection */
+	int gdriver = DETECT, gmode, errorcode;
+	
+	/* initialize graphics and local variables */
+	initgraph(&gdriver, &gmode, "");
+	
+	/* read result of initialization */
+	errorcode = graphresult();
+	
+	/* an error occurred */
+	if (errorcode != grOk)
+	{
+	printf("Graphics error: %s\n", grapherrormsg(errorcode));
+	printf("Press any key to halt:");
+	getch();
+	exit(1);/* terminate with an error code */
+	}
+	}
+	
+	/* This is generic function which draws different shapes */
+	DrawShape(int shape)
+	{
+	switch(shape)
+	{
+	case 1:
+	/* draw the circle */
+	outtextxy(75, 40, "Circle");
+	circle(100, 100, 50);
+	break;
+	
+	case 2:
+	/* draw arc */
+	outtextxy(235, 40, "Arc");
+	arc(250, 100, 0, 180, 50);
+	break;
+	
+	case 3:
+	/* draw a rectangle */
+	outtextxy(350, 40, "Rectangle");
+	rectangle(350,50,450,150);
+	break;
+	
+	case 4:
+	/* set fill style and draw a pie slice */
+	outtextxy(100, 190, "Pie Slice");
+	setfillstyle(EMPTY_FILL, getmaxcolor());
+	pieslice(100, 250, 0, 0, 50);
+	break;
+	}
+}

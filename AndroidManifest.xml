@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.monsterapps.cprograms"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.monsterapps.cprograms.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+             android:exported="false"
+            android:name="com.monsterapps.cprograms.ProgramList"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROGRAMLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+             android:exported="false"
+            android:name="com.monsterapps.cprograms.Temp"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.TEMP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+             android:exported="false"
+            android:name="com.monsterapps.cprograms.ProgramContent"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROGRAMCONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
